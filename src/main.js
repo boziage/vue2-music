@@ -9,8 +9,9 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+Vue.use(globalRegister)
+
 const app = new Vue({
-  globalRegister,
   router,
   store,
   render: (h) => h(App)
